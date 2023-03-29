@@ -1,0 +1,9 @@
+/*--使う色をまとめる--*/
+$palette-red: #F44034; //赤色
+$palette-yellow: #FFEC3D; //黄色
+$palette-blue: #2094F3; //青色
+
+/*--色を使うエリアをまとめる--*/
+$color-global: $palette-red;
+$color-global-main: $palette-yellow;
+$color-global-sub: $palette-blue;

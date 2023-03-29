@@ -1,0 +1,47 @@
+// 絶対配置中央揃え
+@mixin center-pos {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50% , -50%);
+}
+
+
+
+
+
+$sp: 960px;  // スマホ
+
+
+@mixin sp {
+  @media (max-width: ($sp)) {
+    @content;
+  }
+}
+
+
+@mixin inner {
+  max-width: 1022px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+@mixin flex-pc{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@mixin flex-sp {
+  display: flex;
+  flex-direction: column;
+}
+
+@mixin main-mb {
+  margin-bottom: 44px;
+}
+
+@mixin sec-padding {
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
